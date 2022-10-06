@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="xxx.php" method="post" name="name1">
+        <!-- text用户可以输入任何文字 -->
+        <!-- maxlength表示最大输入长度 -->
+        用户名: <input type="text" name="username" value="please enter your name" maxlength="10"><br>
+
+
+        <!-- password为密码框，用户看不到输入的内容 -->
+        密码：&nbsp;&nbsp;<input type="password" name="password"><br>
+
+
+        <!-- radio为单选按钮，可以多选一 -->
+        <!-- name是表单元素名字，这里性别单选按钮必须要有相同的名字name,才可以实现多选1 -->
+        <!-- checked自动换行 -->
+        性别：
+        <!-- label扩大的选择面积 -->
+        <label for="nan">男</label><input type="radio" name="sex" value="male" checked = "checked" id="nan"> 
+        <label for="nv">女</label><input type="radio" name="sex" value="female" id="nv"><br>
+
+
+        <!-- checkbox为复选框 -->
+        爱好：乒乓球<input type="checkbox" name = "hobby" value="tableTennies"> 原神 <input type="checkbox" name = "hobby" value="techokas save the world"> 王者荣耀<input type="checkbox" name = "hobby" value="kingHonor"> 超级🐥🐎<input type="checkbox" name = "hobby" value="superChikenAndHorse" checked="checked"><br><br>
+
+        <!-- 总结:name和value是后台人员需要的属性值，应该是每个表单元素都应该有的，单元按钮和复选框要有相同的name值<br> -->
+        
+        <!-- 提交按钮 -->
+        <input type="submit" value="免费注册"><br>
+        <!-- 重置按钮 -->
+        <input type="reset" value="重新填写"><br>
+        <!-- 普通按钮 -->
+        <input type="button" value="我是一个没有用的按钮"><br>
+        <!-- 上传文件 -->
+        <input type="file" value="上传头像"><br>
+        球籍：
+        <select >
+            <option>地球</option>
+            <option>火星</option>
+            <option>木星</option>
+            <option selected="selected">M78</option>
+            <option>三体宇宙</option>
+        </select><br>
+
+        简介：<br>
+        <textarea>一句话介绍自己</textarea>
+    </form>
+</body>
+</html>
