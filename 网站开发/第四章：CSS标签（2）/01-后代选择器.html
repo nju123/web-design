@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li {
+            color: aquamarine;
+        }
+
+        ul li {
+            color: yellowgreen;
+        }
+
+        .nav li {
+            color: cadetblue;
+        }
+
+        #nav li {
+            color: yellow;
+        }
+
+        ul li a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 后代选择器表示一种父子关系 -->
+    <!-- 后代选择器可以是任意基础选择器的组合 -->
+    <ol>
+        <li>我是ol的儿子</li>
+        <li>我是ol的儿子</li>
+        <li>我是ol的儿子</li>
+    </ol>
+    <ul class="nav">
+        <li>我是ul的儿子</li>
+        <li>我是ul的儿子</li>
+        <li><a href="#">我是ul的孙子</a>我是ul的儿子</li>
+    </ul>
+    <ul id="nav">
+        <li>我是ul的儿子2</li>
+        <li>我是ul的儿子2</li>
+        <li>我是ul的儿子2</li>
+    </ul>
+
+    <ul>
+        <li>我是ul的儿子3</li>
+        <li>我是ul的儿子3</li>
+        <li>我是ul的儿子3</li>
+    </ul>
+</body>
+
+</html>
