@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 相同样式会选择就近的样式覆盖，不冲突则无所谓 */
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            font-size: large;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        就近原则
+    </div>
+</body>
+
+</html>

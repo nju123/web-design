@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 优先级：*or继承<标签<类<id<行内<!important -->
+    <style>
+        div {
+            color: red;
+        }
+
+        p {
+            color: antiquewhite;
+        }
+
+        .xiao {
+            color: rgb(8, 161, 110) !important;
+        }
+
+        #xiao1 {
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="xiao" id="xiao1">我对人间的食物并无兴致。烹饪繁琐，等待漫长。
+            唯独杏仁豆腐，勉强可以入口。</p>
+
+    </div>
+</body>
+
+</html>

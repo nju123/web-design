@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 复合选择器权重会叠加 */
+        /* 注意权重虽然会叠加，但是永远不会进位 */
+        li {
+            /* 权重为0，0，0，1 */
+            color: burlywood;
+        }
+
+        ul li {
+            /* 权重为0，0，0，2 */
+            color: rgb(165, 99, 19);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>欲买桂花同载酒 只可惜故人 何日再见呢。</li>
+        <li>找个地方避避雪吧。我不会有事，但你可能着凉。</li>
+        <li>怎么，难得闲暇，不好好休息却反来找我。是想听我讲故事吗?</li>
+    </ul>
+</body>
+
+</html>
